@@ -1,0 +1,362 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer";
+}
+
+header{
+    grid-area: header;
+    background-color: #3C3C3C;
+    height: 70px;
+}
+
+span.yellow{
+    color: #F7DE77;
+}
+
+header img{
+    width: 70px;
+    float:left;
+}
+
+header div{
+    color:white;
+    font-size: 45px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 15px;
+    margin-left:80px;
+}
+
+nav{
+    grid-area: nav;
+    background-color:#555555;
+}
+
+nav ul{
+    position: sticky;
+    top:0px;
+}
+
+nav a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color:white;
+}
+
+nav div{
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+nav a:hover{
+    background-color: #C8C8C8;
+    color:black;
+}
+
+a.active{
+    background-color: #F7DE77;
+    color:black;
+}
+
+main{
+    grid-area: main;
+}
+
+.main-photo{
+    background-image: url(png/main-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.main-photo h1{
+    padding-top: 240px;
+    padding-left: 170px;
+    font-size: 140px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.main-photo p{
+    padding-top: 30px;
+    padding-left: 170px;
+    font-size: 26px;
+    width: 550px;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .row{
+    text-align: center;
+    color:black;
+    font-family: 'Poppins', sans-serif;
+}
+
+main h2{
+    font-size: 34px;
+    padding-top: 70px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+main .row li{
+    display:inline-block;
+    margin:70px 50px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+main .row li div{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+main .row li div:hover{
+    transform: scale(1.15);
+}
+
+main .row h3{
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 40px;
+    position: absolute;
+    text-decoration: none;
+    padding-right: 15px;
+    width: 285px;
+    margin-top: -50px;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hits{
+     background-image: url(png/anime1.png); 
+}
+
+.new{
+    background-image: url(png/projector1.png);
+}
+
+.discount{
+    background-image: url(png/cat.png);
+}
+
+.grey{
+    background-color: #F0F0F0;
+}
+
+.we{
+    background-image: url(png/we.png);
+}
+
+.author{
+    background-image: url(png/author.png);
+}
+
+footer{
+    grid-area: footer;
+    background-color: #000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+footer .row{
+    margin:15px 0px;
+    color:gray;
+    transition:0.5s;
+}
+
+footer .row a{
+    color:gray;
+}
+
+footer .row a:hover{
+    color:#F7DE77;
+}
+
+    
+footer .row li{
+    display:inline-block;
+    margin:0px 30px;
+}
+
+footer svg{
+    fill:grey;
+    transition: 0.5s;
+}
+
+footer svg:hover{
+    fill:#F7DE77;
+}
+
+table{
+    width: 100%;
+    padding: 20px;  
+    text-align: center;
+}
+
+thead{
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+tbody{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+h1.title{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.image{
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+del{
+    text-decoration: line-through;
+}
+
+table .anime1{
+    background-image: url(png/anime1.png);
+}
+
+table .moon{
+    background-image: url(png/moon.png);
+}
+
+table .klenoviy_venok{
+    background-image: url(png/klenoviy_venok.png);
+}
+
+table .star{
+    background-image: url(png/star.png);
+}
+
+table .izbushka{
+    background-image: url(png/izbushka.png);
+}
+
+table .rgb{
+    background-image: url(png/rgb.png);
+}
+
+table .trickster{
+    background-image: url(png/trickster.png);
+}
+
+table .butterfly{
+    background-image: url(png/butterfly.png);
+}
+
+table .kolechky{
+    background-image: url(png/kolechky.png);  
+}
+
+table .straus{
+    background-image: url(png/straus.png);  
+}
+
+table .projector1{
+    background-image: url(png/projector1.png);  
+}
+
+table .sky{
+    background-image: url(png/sky.png);  
+} 
+
+table .projector2{
+    background-image: url(png/projector2.png);
+}
+
+table .hippo{
+    background-image: url(png/hippo.png)
+}
+
+table .robot{
+    background-image: url(png/robot.png);
+}
+
+table .hippo2{
+    background-image: url(png/hippo2.png)
+}
+
+table .fox{
+    background-image: url(png/fox.png);
+}
+
+table .cat{
+    background-image: url(png/cat.png);
+}
+
+.WeTitle{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(png/elevator.png);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:white;
+    padding: 50px;
+    height: 800px;
+    font-size: 50px;
+}
+
+h2.podTitle{
+    margin-bottom: 50px;
+}
+
+p.text{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 40px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.map{
+    width: 100%;
+    height: 700px;
+}
+
+.contacts{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.email{
+    color:black;
+}
+
+.email:hover{
+    color:#F7DE77;
+}
+
+.photo{
+    text-align: center;
+}
